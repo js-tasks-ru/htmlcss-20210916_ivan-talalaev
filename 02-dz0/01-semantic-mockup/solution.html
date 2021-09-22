@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Семантическая разметка страницы</title>
+    <style>
+        html{
+            font-family: 'Roboto', sans-serif;
+            font-size: 0;
+        }
+        body{
+            margin:0;
+            background-color: antiquewhite;
+
+        }
+        h1{
+            font-size: 36px;
+            margin: 0;
+            padding: 15px 0;
+        }
+        h2{
+            font-size: 24px;
+            margin: 0;
+        }
+        h3{
+            font-size: 18px;
+            margin: 0;
+        }
+        header{
+            background-color: #DDE2E5;
+            text-align: center;
+        }
+        nav{
+            background-color: #ACB5BD;
+            padding: 20px 0;
+        }
+        nav a{
+            padding: 20px;
+            font-size: 14px;
+            color: #212429;
+            text-transform: uppercase;
+            text-decoration: unset;
+        }
+        nav a:hover{
+            color: #ffffff;
+            font-weight: 800;
+            background-color: #495057;
+            text-transform: uppercase;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        main{
+            margin: 0;
+            padding: 0 120px;
+            background-color: antiquewhite;
+            font-size: 14px;
+        }
+        article{
+            padding: 20px 15px;
+            margin: 15px 0;
+            background-color: #7048E8;
+            color: #F8F9FA;
+        }
+        li{
+            padding:5px 0;
+        }
+        footer{
+            margin: 0;
+            padding: 15px 0;
+            color: #F8F9FA;
+            font-size: 24px;
+            text-align: center;
+            background-color: #374FC7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Header</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Languages</a>
+    </nav>
+</header>
+<main>
+    <article>
+        <h2>Artilce 1</h2>
+        <ul>
+            <li>Оригинальная трилогия</li>
+            <li>Трилогия приквелов</li>
+            <li>Трилогия сиквелов
+            </li>
+        </ul>
+    </article>
+    <article>
+        <h2>Article 2</h2>
+        <ol>
+            <li>Эпизод IV — Новая надежда</li>
+            <li>Эпизод V — Империя наносит ответный удар</li>
+            <li>Эпизод VI — Возвращение джедая</li>
+        </ol>
+    </article>
+</main>
+<footer><h3>Footer</h3></footer>
+</body>
+</html>
