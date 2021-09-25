@@ -1,1 +1,78 @@
 /* Стилизация кнопки */
+:root {
+    --blue: #4263EB;
+    --dark-blue: #2342C0;
+    --opacity-blue: #4263eb80;
+    --purple: #7048E8;
+    --dark-purple: #5028C6;
+    --opacity-purple: #7048e880;
+
+    /*Primary button style*/
+    --primary-button-default: var(--blue);
+    --primary-button-hover: var(--dark-blue);
+    --primary-button-disabled: var(--opacity-blue);
+
+    /*Secondary button style*/
+    --secondary-button-default: var(--purple);
+    --secondary-button-hover: var(--dark-purple);
+    --secondary-button-disabled: var(--opacity-purple);
+
+}
+
+button {
+    min-width: 182px;
+    height: 48px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+button.primary {
+    background-color: var(--primary-button-default);
+}
+
+button.primary:hover {
+    background-color: var(--primary-button-hover);
+}
+
+button.primary:disabled {
+    background-color: var(--primary-button-disabled);
+    cursor: not-allowed;
+}
+
+button.secondary {
+    background-color: var(--secondary-button-default);
+}
+
+button.secondary:hover {
+    background-color: var(--secondary-button-hover);
+}
+
+button.secondary:disabled {
+    background-color: var(--secondary-button-disabled);
+    cursor: not-allowed;
+}
+
+button.alternate {
+    background-color: transparent;
+    color: #495057;
+    border: 1px solid #ACB5BD;
+    box-sizing: border-box;
+}
+
+button.alternate:hover {
+    border: 1px solid #212429;
+    box-sizing: border-box;
+}
+
+button.alternate:disabled {
+    color: #acb5bd4d;
+    border: 1px solid #acb5bd4d;
+    box-sizing: border-box;
+    cursor: not-allowed;
+}
