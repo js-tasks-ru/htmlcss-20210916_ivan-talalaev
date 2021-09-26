@@ -3,14 +3,35 @@
 :root {
     --white: #ffffff;
     --black: #212429;
+    --opacity-black: #acb5bd4d;
     --pink: #F784AD;
     --purple: #7048E8;
+    --dark-purple: #5028C6;
+    --opacity-purple: #7048e880;
     --blue: #374FC7;
+    --blue-2: #4263EB;
+    --dark-blue: #2342C0;
+    --opacity-blue: #4263eb80;
     --red: #F03D3E;
+    --grey: #ACB5BD;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+
+    --accordion-background: var(--white);
+    --accordion-border: var(--grey);
+    --accordion-text: var(--grey-4);
+
+    /*Primary button style*/
+    --primary-button-default: var(--blue-2);
+    --primary-button-hover: var(--dark-blue);
+    --primary-button-disabled: var(--opacity-blue);
+
+    /*Secondary button style*/
+    --secondary-button-default: var(--purple);
+    --secondary-button-hover: var(--dark-purple);
+    --secondary-button-disabled: var(--opacity-purple);
 
     --error: var(--red);
     --success: var(--blue);
