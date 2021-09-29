@@ -1,1 +1,41 @@
-/* Стилизация аккордеона */
+.accordion {
+    font: 16px "Inter", sans-serif;
+    max-width: 730px;
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.accordion__summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.accordion__summary-wrapped {
+    padding: 0 32px 32px;
+}
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__summary::after {
+    content: url("../../assets/images/Vector.png");
+    display: inline-block;
+    font-size: 21px;
+    transform: rotate(180deg);
+    transform-origin: center;
+}
+
+.accordion[open] .accordion__summary::after {
+    content: url("../../assets/images/Vector.png");
+    display: inline-block;
+    font-size: 21px;
+    transform: none;
+    transform-origin: center;
+}
