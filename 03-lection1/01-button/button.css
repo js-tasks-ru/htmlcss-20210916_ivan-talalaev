@@ -43,12 +43,10 @@
     background-color: transparent;
     color: var(--grey-4);
     border: 1px solid var(--grey);
-    box-sizing: border-box;
 }
 
 .button_alternate:hover {
     border: 1px solid var(--black);
-    box-sizing: border-box;
 }
 
 .button_alternate:disabled {
